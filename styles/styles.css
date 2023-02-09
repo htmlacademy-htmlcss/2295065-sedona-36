@@ -73,3 +73,27 @@ color: #ffffff;
   background-color: rgba(131, 179, 211, 0.2);
   color: #000000;
   }
+
+  .services-list {
+    text-align: center;
+  }
+
+  .services-title {
+    font-family: "PT Sans", sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: uppercase;
+  }
+
+  .services-item  {
+    width: 400px;
+    height: 385px;
+    background-color: rgba(131, 179, 211, 0.12);
+    color:#000000;
+    }
+
+    .services-item-food
+    {
+      background-color: rgba(131, 179, 211, 0.2);
+      color: #ffffff;
+      }
