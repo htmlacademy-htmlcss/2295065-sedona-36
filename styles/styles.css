@@ -1,7 +1,7 @@
 @font-face {
   font-family: "PT Sans";
 
-  font-style:normal;
+  font-style: normal;
   font-weight: 400;
   src: url("fonts/ptsans-400.woff2") format("woff2");
   font-display: swapp
@@ -10,7 +10,7 @@
 @font-face {
   font-family: "PT Sans";
 
-  font-style:normal;
+  font-style: normal;
   font-weight: 700;
   src: url("fonts/ptsans-700.woff2") format("woff2");
   font-display: swapp
@@ -24,76 +24,183 @@ body {
   color: #000000;
   background-color: #FFFFFF;
 }
+
 .page-header {
   color: #000000;
   background-color: #ffffff;
 }
+
 .navigation-link {
   font-family: "PT Sans", sans-serif;
   line-height: 24px;
-  font-weight: 700;
+  font-weight: 700px;
   text-align: center;
-  color:inherit;
+  color: inherit;
   background-color: inherit;
   text-decoration: none;
   text-transform: capitalize;
 }
+
 .main-index {
-  color:#000000;
+  color: #000000;
   background-color: #ffffff;
   background-image: url("../images/sedona-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
+
+.info-title-advantages {
+  font-family: "PT Sans", sans-serif;
+  line-height: 36px;
+  font-weight: 700px;
+  text-align: center;
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
+.info-description-advantages {
+  font-family: "PT Sans", sans-serif;
+  line-height: 26px;
+  font-weight: 400px;
+  text-align: center;
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
 .advantages-list {
   text-align: center;
 }
+
 .advantages-title {
   font-family: "PT Sans", sans-serif;
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
 }
+
 .advantages-item {
-width: 400px;
-height: 385px;
-background-color: #82B3D3;
-color: #ffffff;
+  width: 400px;
+  height: 385px;
+  background-color: #82B3D3;
+  color: #ffffff;
 }
 
-.advantages-item-square
-.advantages-item-tourist
-{
+.advantages-item-square .advantages-item-tourist {
   background-color: rgba(131, 179, 211, 0.12);
   color: #000000;
-  }
+}
 
-  .advantages-item-road
-  {
+.advantages-item-road {
   background-color: rgba(131, 179, 211, 0.2);
   color: #000000;
-  }
+}
 
-  .services-list {
-    text-align: center;
-  }
+.info-title-services {
+  font-family: "PT Sans", sans-serif;
+  line-height: 36px;
+  font-weight: 700px;
+  text-align: center;
+  color: #000000;
+  background-color: #FFFFFF;
+}
 
-  .services-title {
-    font-family: "PT Sans", sans-serif;
-    font-size: 18px;
-    line-height: 21px;
-    text-transform: uppercase;
-  }
+.info-description-services {
+  font-family: "PT Sans", sans-serif;
+  line-height: 26px;
+  font-weight: 400px;
+  text-align: center;
+  color: #000000;
+  background-color: #FFFFFF;
+}
 
-  .services-item  {
-    width: 400px;
-    height: 385px;
-    background-color: rgba(131, 179, 211, 0.12);
-    color:#000000;
-    }
+.services-list {
+  text-align: center;
+}
 
-    .services-item-food
-    {
-      background-color: #ffffff;
-      color: #000000;
-      }
+.services-title {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+.services-item {
+  width: 400px;
+  height: 385px;
+  background-color: rgba(131, 179, 211, 0.12);
+  color: #000000;
+}
+
+.services-item-food {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.info-title-hotel {
+  font-family: "PT Sans", sans-serif;
+  line-height: 36px;
+  font-weight: 700px;
+  text-align: center;
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
+.info-description-hotel {
+  font-family: "PT Sans", sans-serif;
+  line-height: 26px;
+  font-weight: 400px;
+  text-align: center;
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
+.button-hotel {
+  font-family: "PT Sans", sans-serif;
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700px;
+  text-align: center;
+  color: #FFFFF0;
+  background-color: #756157;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.appointment-title-subscription {
+  font-family: "PT Sans", sans-serif;
+  line-height: 36px;
+  font-weight: 700px;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #000000;
+
+}
+
+.appointment-description-subscription {
+  font-family: "PT Sans", sans-serif;
+  line-height: 26px;
+  font-weight: 400px;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #000000;
+}
+
+.button {
+  font-family: inherit;
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  text-align: center;
+  color: #ffffff;
+  background-color: #82B3D3;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.contacts-phone {
+  font-size: 40px;
+  line-height: 40px;
+  text-decoration-line: underline;
+  text-transform: uppercase;
+  color: #242424;
+}
