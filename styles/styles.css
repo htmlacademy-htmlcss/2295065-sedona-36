@@ -199,6 +199,10 @@ line-height: 24px;
 color: #000000;
 }
 
+.catalog-header{
+  background-image: url("../images/catalog.jpg");
+  background-size: cover;
+}
 .contacts-phone {
   font-size: 40px;
   line-height: 40px;
@@ -209,37 +213,28 @@ color: #000000;
   text-decoration: none;
 }
 
-.catalog-filter {
-  background-image: url("../images/catalog.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;;
-}
 
+.catalog-header-title {
+  font-weight: 700;
+font-size: 60px;
+line-height: 78px;
+color: #FFFFFF;
+
+}
 .breadcrumbs-link-hotel {
   font-size:16px;
   line-height: 21px;
   font-weight: 400;
   color: #FFFFFF;
-  background-color: #000000;
 }
-
 
 .catalog-filter-title
 {
   font-weight: 700;
-font-size: 20px;
-line-height: 24px;
+  font-size: 20px;
+  line-height: 24px;
   color: #FFFFFF;
-  background-color: #000000;
-}
 
-.filters_legend
-{
-  font-weight: 700;
-font-size: 20px;
-line-height: 24px;
-  color: #FFFFFF;
-  background-color: #000000;
 }
 
 .rating
