@@ -72,10 +72,23 @@ body {
 }
 
 .navigation {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
+}
 
+.navigation-list {
+  width: 450px;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-user {
+  max-width: 300px;
+  margin-left: auto;
 }
 
 .navigation-link {
