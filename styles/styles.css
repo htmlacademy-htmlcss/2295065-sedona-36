@@ -28,6 +28,10 @@ img {
   object-fit: contain;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   font-family: "PT Sans", sans-serif;
   font-size: 22px;
@@ -52,6 +56,11 @@ body {
   color:#ffffff;
   background-color: #756157;
 }
+
+.button-success {
+  background-color: #7DB54F;
+}
+
 
 .page-header {
   color: #000000;
@@ -183,12 +192,16 @@ color: #ffffff;
   line-height: 26px;
   font-weight: 400;
   text-align: center;
-  color: #FFFFFF;
-  background-color: #000000;
-  background-image: url("../images/subscribe.jpg");
+  color: #000000;
   background-size: cover;
   background-repeat: no-repeat;
 
+}
+
+.appointment-background {
+  color: #FFFFFF;
+    background-color: #000000;
+  background-image: url("../images/subscribe.jpg");
 }
 
 .appointment-form
@@ -221,6 +234,20 @@ line-height: 78px;
 color: #FFFFFF;
 
 }
+
+.breadcrumbs-link {
+color: #FFFFFF;
+  font-style: normal;
+  text-decoration: none;
+}
+
+.product-card-link {
+  color: #000000;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  }
+
 .breadcrumbs-link-hotel {
   font-size:16px;
   line-height: 21px;
@@ -246,11 +273,27 @@ color: #FFFFFF;
   background-color: #F2F2F2;
 }
 
-.control-input
-{
+.control-input{
   font-weight: 400;
 font-size: 18px;
 line-height: 23px;
 color: #FFFFFF;
 background-color: #000000;
+}
+
+
+.pagination-link-current {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+color: #000000;
+background-color: #F2F2F2;
+}
+
+.pagination-link {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+color: #FFFFFF;
+background-color: #82B3D3;
 }
