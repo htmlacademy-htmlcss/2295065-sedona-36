@@ -33,6 +33,10 @@ html {
 }
 
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 22px;
   line-height: 26px;
@@ -83,6 +87,10 @@ body {
   background-color: inherit;
   text-decoration: none;
   text-transform: capitalize;
+}
+
+.main-container {
+  flex-grow: 1;
 }
 
 .hero {
