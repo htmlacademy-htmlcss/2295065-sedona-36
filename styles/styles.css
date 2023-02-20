@@ -41,7 +41,7 @@ body {
   font-size: 22px;
   line-height: 26px;
   color: #000000;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .button {
@@ -51,24 +51,28 @@ body {
   font-weight: 700;
   text-align: center;
   color: #ffffff;
-  background-color: #82B3D3;
+  background-color: #82b3d3;
   text-decoration: none;
   text-transform: uppercase;
 }
 
 .button-secondary {
-  color:#ffffff;
+  color: #ffffff;
   background-color: #756157;
 }
 
 .button-success {
-  background-color: #7DB54F;
+  background-color: #7db54f;
 }
-
 
 .page-header {
   color: #000000;
   background-color: #ffffff;
+}
+
+.page-header-logo {
+  width: 140px;
+  margin-right: 30px;
 }
 
 .navigation {
@@ -106,8 +110,18 @@ body {
   flex-grow: 1;
 }
 
+.page-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.sedona {
+  display: block;
+  margin: 0 auto;
+}
+
 .hero {
-color: #ffffff;
+  color: #ffffff;
   background-color: #000000;
   background-image: url("../images/sedona-background.jpg");
   background-size: cover;
@@ -115,11 +129,11 @@ color: #ffffff;
 }
 
 .info-title-advantages {
-   line-height: 36px;
+  line-height: 36px;
   font-weight: 700;
   text-align: center;
   color: #000000;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .info-description-advantages {
@@ -127,11 +141,17 @@ color: #ffffff;
   font-weight: 400;
   text-align: center;
   color: #000000;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .advantages-list {
   text-align: center;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  width: 400px;
 }
 
 .advantages-title {
@@ -141,8 +161,18 @@ color: #ffffff;
 }
 
 .advantages-item {
-  background-color: #82B3D3;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  min-height: 385px;
+  background-color: #82b3d3;
   color: #ffffff;
+}
+
+.advantages-item-text {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
 }
 
 .advantages-item-square .advantages-item-tourist {
@@ -160,7 +190,7 @@ color: #ffffff;
   font-weight: 700;
   text-align: center;
   color: #000000;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .info-description-services {
@@ -168,10 +198,14 @@ color: #ffffff;
   font-weight: 400;
   text-align: center;
   color: #000000;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .services-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
   text-align: center;
 }
 
@@ -182,21 +216,27 @@ color: #ffffff;
 }
 
 .services-item {
+  width: 400px;
   background-color: rgba(131, 179, 211, 0.12);
   color: #000000;
 }
 
 .services-item-food {
+  width: 400px;
   background-color: #ffffff;
   color: #000000;
 }
 
+.info-hotel {
+  color: #000000;
+  background-color: #ffffff;
+}
 .info-title-hotel {
   line-height: 36px;
   font-weight: 700;
   text-align: center;
   color: #000000;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .info-description-hotel {
@@ -204,9 +244,8 @@ color: #ffffff;
   font-weight: 400;
   text-align: center;
   color: #000000;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
-
 
 .appointment {
   font-family: inherit;
@@ -216,27 +255,64 @@ color: #ffffff;
   color: #000000;
   background-size: cover;
   background-repeat: no-repeat;
-
 }
 
 .appointment-background {
-  color: #FFFFFF;
-    background-color: #000000;
+  color: #ffffff;
+  background-color: #000000;
   background-image: url("../images/subscribe.jpg");
 }
 
-.appointment-form
-{
+.appointment-form {
   font-family: inherit;
   font-size: 18px;
-line-height: 24px;
-color: #000000;
+  line-height: 24px;
+  color: #000000;
 }
 
-.catalog-header{
+.page-footer-container {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-social-list {
+  max-width: 150px;
+  margin-right: 42px;
+}
+
+.page-footer-logo {
+  max-width: 120px;
+  margin-left: 42px;
+}
+
+.contacts-phone {
+  max-width: 720px;
+  margin-left: 42px;
+  margin-right: 42px;
+}
+
+.social-button {
+  width: 48px;
+  height: 40px;
+  background: #83B3D3;
+}
+
+.catalog-header {
   background-image: url("../images/catalog.jpg");
   background-size: cover;
 }
+
+.catalog-filter-container {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.catalog-right-column {
+  width: 1060px;
+}
+
 .contacts-phone {
   font-size: 40px;
   line-height: 40px;
@@ -247,17 +323,15 @@ color: #000000;
   text-decoration: none;
 }
 
-
 .catalog-header-title {
   font-weight: 700;
-font-size: 60px;
-line-height: 78px;
-color: #FFFFFF;
-
+  font-size: 60px;
+  line-height: 78px;
+  color: #ffffff;
 }
 
 .breadcrumbs-link {
-color: #FFFFFF;
+  color: #ffffff;
   font-style: normal;
   text-decoration: none;
 }
@@ -267,54 +341,56 @@ color: #FFFFFF;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
-  }
-
-.breadcrumbs-link-hotel {
-  font-size:16px;
-  line-height: 21px;
-  font-weight: 400;
-  color: #FFFFFF;
 }
 
-.catalog-filter-title
-{
+.breadcrumbs-link-hotel {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.catalog-filter-title {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
-  color: #FFFFFF;
-
+  color: #ffffff;
 }
 
-.rating
-{
+.catalog-filter-item {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.rating {
   font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  color: #333333;
-  background-color: #F2F2F2;
+  font-size: 18px;
+  line-height: 23px;
+  color: #f2f2f2;
 }
 
-.control-input{
+.control-input {
   font-weight: 400;
-font-size: 18px;
-line-height: 23px;
-color: #FFFFFF;
-background-color: #000000;
+  font-size: 18px;
+  line-height: 23px;
+  color: #ffffff;
+  background-color: #000000;
 }
-
 
 .pagination-link-current {
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
-color: #000000;
-background-color: #F2F2F2;
+  color: #000000;
+  background-color: #f2f2f2;
 }
 
 .pagination-link {
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
-color: #FFFFFF;
-background-color: #82B3D3;
+  color: #ffffff;
+  background-color: #82b3d3;
 }
