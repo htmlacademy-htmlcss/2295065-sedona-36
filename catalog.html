@@ -4,15 +4,15 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/styles.min.css">
   </head>
 
   <body>
     <header class="page-header">
+      <a class="logo" href="index.html" tabindex="-1">
+        <img class="page-header-logo" src="images/logo-sedona.svg" width="140" height="70" alt="Герб Седоны.">
+      </a>
       <nav class="navigation">
-        <a class="logo" href="index.html" tabindex="-1">
-          <img class="page-header-logo" src="images/logo-sedona.svg" width="140" height="70" alt="Герб Седоны.">
-        </a>
         <ul class="navigation-list">
           <li class="navigation-item">
             <a class="navigation-link" href="index.html">Главная</a>
@@ -37,7 +37,7 @@
               <span class="visually-hidder">
                 Избранное
               </span>
-              <span class="visually-hidder">
+              <span class="like">
                 12
               </span>
             </a>
@@ -50,7 +50,6 @@
     </header>
 
     <main class="main-container main-inner">
-      <div class="page-container">
       <section class="catalog-header">
         <h1 class="catalog-header-title">Гостиницы Седона</h1>
         <ol class="breadcrumbs">
@@ -244,39 +243,38 @@
         </div>
         </section>
         <section class="appointment">
-          <h2 class="appointment-title">Подпишитесь на рассылку</h2>
-          <p class="appointment-description"> Только полезная информация и никакого спама, честное бойскаутское!
-          </p>
+          <p class="appointment-intro info-description">
+            <strong class="sub-heading">Подпишитесь на рассылку</strong>
+            Только полезная информация и никакого спама, честное бойскаутское!</p>
           <form class="appointment-form" action="index.html" method="post">
             <button class="button" type="submit">Подписаться</button>
           </form>
         </section>
-      </div>
     </main>
 
     <footer class="page-footer">
       <div class="page-footer-container">
-      <h2 class="page-footer-title">Давайте дружить</h2>
+      <h2 class="visually-hidden">Давайте дружить</h2>
       <ul class="footer-social-list">
         <li class="footer-social-item">
           <a class="button social-button" href="https://vk.com/htmlacademy">
-            <span class="visually-hidden">Вконтакте</span>
+            <span class="social">Вконтакте</span>
           </a>
         </li>
         <li class="footer-social-item">
           <a class="button social-button" href="https://t.me/htmlacademy">
-            <span class="visually-hidden">Telegram</span>
+            <span class="social">Telegram</span>
           </a>
         </li>
         <li class="footer-social-item">
           <a class="button social-button" href="https://www.youtube.com/user/htmlacademyru">
-            <span class="visually-hidden">Youtube</span>
+            <span class="social">Youtube</span>
           </a>
         </li>
       </ul>
       <address>
         <a class="contacts-phone" href="tel:+78128121212">+7&nbsp;(812)&nbsp;812&#8209;12&#8209;12</a>
-        <span class="visually-hidden">Звоните нам на</span>
+        <span class="social">Звоните нам на</span>
       </address>
 
       <small>

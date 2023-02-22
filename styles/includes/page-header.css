@@ -1,0 +1,48 @@
+.page-header {
+  color: #000000;
+  padding: 0 70px;
+  display: flex;
+  gap: 28px;
+}
+
+.page-header-logo {
+
+}
+
+.navigation {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: calc(24 / 20);
+}
+
+.navigation-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navigation-user {
+  margin-left: auto;
+}
+
+.navigation-link {
+  font-family: "PT Sans", sans-serif;
+  line-height: 24px;
+  font-weight: 700;
+  text-align: center;
+  color: inherit;
+  background-color: inherit;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.like {
+  line-height: 10px;
+  font-weight: 400;
+  text-align: center;
+  color:#ffffff;
+  background-color: #7DB54F;
+}

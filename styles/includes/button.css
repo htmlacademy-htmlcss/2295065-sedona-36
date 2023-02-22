@@ -1,0 +1,27 @@
+.button {
+  font-family: inherit;
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  text-align: center;
+  color: #ffffff;
+  background-color: #82b3d3;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 8px;
+}
+
+.button-secondary {
+  color: #ffffff;
+  background-color: #756157;
+}
+
+.button-success {
+  background-color: #7db54f;
+}
+
+.social-button {
+  width: 48px;
+  height: 40px;
+  background: #83B3D3;
+}
