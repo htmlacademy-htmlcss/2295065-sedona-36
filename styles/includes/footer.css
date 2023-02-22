@@ -1,0 +1,28 @@
+.page-footer-container {
+display: flex;
+width: 1060px;
+justify-content: space-between;
+align-items: center;
+padding: 40px 70px 30px;
+}
+
+.footer-social-list {
+  width: 142px;
+  margin-right: auto;}
+
+
+.contacts-phone {
+  font-size: 40px;
+  line-height: 40px;
+  text-decoration-line: underline;
+  text-transform: uppercase;
+  color: #242424;
+  font-style: normal;
+  text-decoration: none;
+  width: 720px;
+}
+
+.page-footer-logo {
+  width: 115px;
+  margin-left: 42px;
+}

@@ -4,12 +4,12 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/styles.min.css">
   </head>
 
   <body>
     <header class="page-header">
-      <a class="logo">
+      <a class="logo" href="index.html" tabindex="-1">
         <img class="page-header-logo" src="images/logo-sedona.svg" width="140" height="70" alt="Герб Седоны.">
       </a>
       <nav class="navigation">
@@ -37,7 +37,7 @@
               <span class="visually-hidder">
                 Избранное
               </span>
-              <span class="visually-hidder">
+              <span class="like">
                 12
               </span>
             </a>
@@ -50,48 +50,59 @@
     </header>
 
 
-    <main class="main-index">
+    <main class="main-container main-index">
       <section class="hero">
         <h1 class="visually-hidden">Добро пожаловать в прекрасную Седону</h1>
         <img src="images/welcome.svg" width="458" height="352" alt="Потому что Гранд Каньон отстой">
       </section>
       <section class="advantages">
         <h2 class="visually-hidden">Преимущества</h2>
-        <strong class="info-title info-title-advantages"> Седона — небольшой городок в Аризоне, заслуживающий большего!</strong>
-        <p class="info-description info-description-c">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+        <p class="advantages-intro info-description">
+        <strong class="sub-heading"> Седона — небольшой городок в Аризоне, заслуживающий большего!</strong>
+        Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
         <ul class="advantages-list">
           <li class="advantages-item">
+            <div class="advantages-item-text">
             <h3 class="advantages-title">Настоящий городок</h3>
             <p class="advantages-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
             <img src="images/real-town.jpg" width="800" height="385" alt="Уютная площадь в небольшом городишке">
+          </div>
           </li>
           <li class="advantages-item advantages-item-square">
+            <div class="advantages-item-text">
             <h3 class="advantages-title">Небольшая площадь</h3>
             <p class="advantages-description">Все достопримечательности находятся очень близко</p>
+          </div>
           </li>
           <li class="advantages-item advantages-item-road">
+            <div class="advantages-item-text">
             <h3 class="advantages-title">Красивая дорога</h3>
             <p class="advantages-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          </div>
           </li>
           <li class="advantages-item advantages-item-tourist">
+            <div class="advantages-item-text">
             <h3 class="advantages-title">Мало туристов</h3>
             <p class="advantages-description">Большинство едет в Гранд Каньон и толпится там</p>
+          </div>
           </li>
           <li class="advantages-item">
+            <div class="advantages-item-text">
             <h3 class="advantages-title">Там есть мост дьявола</h3>
             <p class="advantages-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
             <img src="images/devil-bridge.jpg" width="800" height="385" alt="Обтёсанный природой каменный мост сквозь ущелье">
+          </div>
           </li>
         </ul>
       </section>
 
       <section class="services">
         <h2 class="visually-hidden">Сервис</h2>
-        <strong class="info-title info-title-services">Приезжайте в Седону отдохнуть в комфорте и уюте!</strong>
-        <p class="info-description info-description-services">Опытный персонал и качественное обслуживание!</p>
-
-        <ul class="services-list">
-          <li class="services-item">
+        <p class="services-intro info-description-services">
+        <strong class="sub-heading">Приезжайте в Седону отдохнуть в комфорте и уюте!</strong>
+        Опытный персонал и качественное обслуживание!</p>
+            <ul class="services-list">
+           <li class="services-item">
             <h4 class="services-title">Жильё</h4>
             <p class="services-description">Рекомендуем пожить в настоящем мотеле,всё как в кино!</p>
           </li>
@@ -103,20 +114,21 @@
             <h4 class="services-title">Сувениры</h4>
             <p class="services-description">Не только китайского, но и настоящего местного производства!</p>
           </li>
-        </ul>
+          </ul>
       </section>
 
       <section class="info-hotel">
-        <h2 class="info-title info-title-hotel">Заинтересовались?</h2>
-        <p class="info-description-hotel"> Укажите предполагаемые даты поездки, и мы покажем вам лучшие
+        <p class="hotel-intro info-description-hotel">
+          <strong class="sub-heading">Заинтересовались?</strong>
+           Укажите предполагаемые даты поездки, и мы покажем вам лучшие
           предложения гостиниц в Седоне</p>
         <a class="button button-secondary" href="catalog.html">Поиск гостиницы в Седоне</a>
       </section>
-      <section class="appointment">
-        <h2 class="appointment-title">Подпишитесь на рассылку</h2>
-        <p class="appointment-description"> Только полезная информация и никакого спама, честное бойскаутское!
-        </p>
-        <form class="appointment-form" method="post" action="https://echo.htmlacademy.ru">
+      <section class="appointment appointment-background">
+        <p class="appointment-intro info-description">
+          <strong class="sub-heading">Подпишитесь на рассылку</strong>
+          Только полезная информация и никакого спама, честное бойскаутское!</p>
+           <form class="appointment-form" method="post" action="https://echo.htmlacademy.ru">
           <input type="email" name="email" id="appointment-email" required placeholder="Ваш e-mail"
             aria-label="Ваш e-mail">
           <button class="button" type="submit">Подписаться</button>
@@ -125,21 +137,22 @@
     </main>
 
     <footer class="page-footer">
-      <h2 class="page-footer-title">Давайте дружить</h2>
+      <div class="page-footer-container">
+      <h2 class="visually-hidden">Давайте дружить</h2>
       <ul class="footer-social-list">
         <li class="footer-social-item">
-          <a class="button" href="https://vk.com/htmlacademy">
-            <span class="visually-hidden">Вконтакте</span>
+          <a class="button social-button" href="https://vk.com/htmlacademy">
+            <span class="social">Вконтакте</span>
           </a>
         </li>
         <li class="footer-social-item">
-          <a class="button" href="https://t.me/htmlacademy">
-            <span class="visually-hidden">Telegram</span>
+          <a class="button social-button" href="https://t.me/htmlacademy">
+            <span class="social">Telegram</span>
           </a>
         </li>
         <li class="footer-social-item">
-          <a class="button" href="https://www.youtube.com/user/htmlacademyru">
-            <span class="visually-hidden">Youtube</span>
+          <a class="button social-button" href="https://www.youtube.com/user/htmlacademyru">
+            <span class="social">Youtube</span>
           </a>
         </li>
       </ul>
@@ -153,6 +166,7 @@
           <img class="page-footer-logo" src="images/loga-html-academy.svg" width="115" height="34" alt="HTML Academy.">
         </a>
       </small>
+    </div>
     </footer>
   </body>
 </html>
