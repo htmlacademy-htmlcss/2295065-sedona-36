@@ -3,7 +3,7 @@ import plumber from "gulp-plumber";
 import postcss from "gulp-postcss";
 import csso from "postcss-csso";
 import rename from "gulp-rename";
-import { stacksvg } from "gulp-stacksvg";
+import svgSprite from "gulp-svg-sprite";
 import svgo from "gulp-svgmin";
 import { htmlValidator } from "gulp-w3c-html-validator";
 import browser from "browser-sync";
@@ -15,8 +15,8 @@ const server = browser.create();
 const { src, dest, watch, series, parallel } = gulp;
 
 const Path = {
-	STYLES: ["./styles/**/*.css", "!./styles/**/*.min.css"],
-	ICONS: ["./icons/**/*.svg", "!./icons/stack.svg"],
+	STYLES: ["styles/**/*.css", "!styles/**/*.min.css"],
+	ICONS: "icons/**/*.svg",
 };
 
 export function processStyles() {
@@ -42,7 +42,18 @@ export function processStyles() {
 }
 
 export function createStack() {
-	return src(Path.ICONS).pipe(svgo()).pipe(stacksvg()).pipe(dest("./icons"));
+	return src(Path.ICONS)
+	.pipe(svgo({
+		floatPrecision: 2,
+	}))
+	.pipe(svgSprite({
+		mode: {
+			view: true,
+			symbol: true
+		}
+	}))
+	.pipe(rename("stack.svg"))
+	.pipe(dest("images/"));
 }
 
 export function validateMarkup() {
