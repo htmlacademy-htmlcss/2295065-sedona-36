@@ -1,7 +1,13 @@
+.advantages {
+text-align: center;
+
+}
+
+
+
 .advantages-intro {
   max-width: 720px;
   padding: 69px 20px 90px;
-  text-align: center;
   margin: 0 auto;
 }
 
@@ -12,12 +18,54 @@
 .info-description-advantages {
   line-height: 26px;
   font-weight: 400;
-  text-align: center;
   color: #000000;
   background-color: #ffffff;
 }
 
 .advantages-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+.advantages-text-block {
+  flex: 1 0 33%;
+  min-height: 385px;
+  padding: 20px;
+  background-color: hsl(204deg 48% 67% / var(--bg-opacity, 12%));
+  display: grid;
+  place-items: center;
+  place-content: center;
+}
+
+.advantages .advantages-text-block:nth-child(3n) {
+--bg-opacity: 20%;
+}
+
+.advantages-panorama {
+  flex: 1 0 100%;
+  display: flex;
+  color: #ffffff;
+  --bg-opacity: 100%;
+}
+
+.advantages-panorama:nth-child(5n) {
+flex-direction: row-reverse;
+}
+
+.services{
+text-align: center;
+}
+
+.services .advantages-text-block:nth-child(even){
+  --bg-opacity: 0;
+  }
+
+
+/* .advantages-list {
   text-align: center;
   margin: 0;
   padding: 0;
@@ -31,7 +79,7 @@
   text-transform: uppercase;
 }
 
-.advantages-item {
+.advantages-text-block {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
@@ -40,19 +88,19 @@
   color: #ffffff;
 }
 
-.advantages-item-text {
+/* .advantages-text-block-text {
 display: flex;
 padding: 0 px;
 margin: 0 auto;
 
 }
 
-.advantages-item-square .advantages-item-tourist {
+.advantages-text-block-square .advantages-text-block-tourist {
   background-color: rgba(131, 179, 211, 0.12);
   color: #000000;
 }
 
-.advantages-item-road {
+.advantages-text-block-road {
   background-color: rgba(131, 179, 211, 0.2);
   color: #000000;
 }
@@ -109,4 +157,4 @@ margin: 0 auto;
 
 .services-intro .sub-heading{
   display: block;
-}
+} */

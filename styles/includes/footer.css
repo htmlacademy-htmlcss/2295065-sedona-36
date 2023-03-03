@@ -1,14 +1,22 @@
 .page-footer-container {
 display: flex;
-width: 1060px;
+/* width: 1060px; */
 justify-content: space-between;
 align-items: center;
 padding: 40px 70px 30px;
 }
 
 .footer-social-list {
-  width: 142px;
-  margin-right: auto;}
+list-style: none;
+padding: 0;
+margin: 0;
+width: 142px;
+height: 40px;
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+}
+
 
 
 .contacts-phone {
@@ -19,10 +27,22 @@ padding: 40px 70px 30px;
   color: #242424;
   font-style: normal;
   text-decoration: none;
-  width: 720px;
+
 }
 
 .page-footer-logo {
-  width: 115px;
-  margin-left: 42px;
+
+}
+
+.social-button {
+  color: hsl(204, 48%, 67%);
+  text-decoration: none;
+}
+
+.social-button:is(:hover, :focus-visible) {
+  color: hsl(204, 48%, 60%);
+}
+
+.social-button:active  {
+  color: hsla(204, 48%, 60%, 0.3);
 }

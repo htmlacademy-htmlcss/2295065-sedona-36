@@ -6,7 +6,7 @@
 }
 
 .page-header-logo {
-
+  margin-bottom: 82px;
 }
 
 .navigation {
@@ -19,9 +19,17 @@
 }
 
 .navigation-list {
+  display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  display: flex;
+  list-style-type: none;
+
+}
+
+.navigation-user .navigation-link {
+  min-width: 16px;
+  min-height: 22px;
 }
 
 .navigation-user {
@@ -29,6 +37,8 @@
 }
 
 .navigation-link {
+  display: block;
+  padding: 20px 16px;
   font-family: "PT Sans", sans-serif;
   line-height: 24px;
   font-weight: 700;
