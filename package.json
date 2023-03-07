@@ -21,8 +21,8 @@
 		"stylelint-config-firefoxic": "1.0.0"
 	},
 	"scripts": {
-		"test": "npm run lint",
-		"lint": "editorconfig-cli && stylelint \"styles/styles.css\" && gulp validateMarkup --silent",
+		"lint": "editorconfig-cli && npm run lint:css && gulp validateMarkup --silent",
+		"lint:css": "stylelint \"styles/**/*.css\"",
 		"build": "gulp compileProject",
 		"start": "gulp runDev"
 	},
