@@ -1,21 +1,48 @@
 .button {
   font-family: inherit;
   font-size: 20px;
-  line-height: 36px;
+  line-height: calc(36 / 20);
   font-weight: 700;
   text-align: center;
   color: #ffffff;
-  background-color: #82b3d3;
+  --bg: hsl(204, 48%, 67%);
+  background-color: var(--bg);
   text-decoration: none;
   text-transform: uppercase;
   padding: 8px;
+  border-radius: 4px;
+  border: none;
+  transition-property: background-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: ease-in-out;
+  outline-color: var(--bg);
+  outline-offset: 0.2em;
+  cursor: pointer;
+
 }
 
-.button-secondary {
-  color: #ffffff;
-  background-color: #756157;
+.button:is(:hover, :focus-visible) {
+  --bg: hsl(204, 48%, 60%);
+}
+
+.button:active {
+  color: hsl(0deg 0%, 100% / 30%);
+}
+
+.button--secondary {
+  --bg: hsl(20, 15%, 40%);
+
+}
+
+.button--secondary:is(:hover, :focus-visible) {
+  --bg: hsl(19, 15%, 33%);
 }
 
 .button-success {
-  background-color: #7db54f;
+  --bg: hsl(93, 41%, 51%);
+}
+
+
+.button-successy:is(:hover, :focus-visible) {
+  --bg: hsl(93, 41%, 44%);
 }
