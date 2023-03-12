@@ -1,0 +1,45 @@
+.appointment {
+  font-family: inherit;
+  line-height: 26px;
+  font-weight: 400;
+  text-align: center;
+  color: #000000;
+  padding: 96px 20px 104px;
+}
+
+.appointment-background {
+  color: #ffffff;
+  background-color: #000000;
+  background-image: url("../images/subscribe.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* .appointment .appointment-background {
+max-width: 662px;
+margin: 0 auto;
+padding: 96px 20px
+} */
+
+.appointment-title {
+  margin: 0 auto 20px;
+  max-width: 40ch;
+}
+
+.appointment-form {
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.appointment-intro {
+    padding: 96px 20px 54px 104px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+.appointment-intro .sub-heading{
+    display: block;
+    max-width: 720px;
+  }

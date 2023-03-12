@@ -1,0 +1,20 @@
+.info-hotel {
+  color: #000000;
+  background-color: #ffffff;
+  max-width: calc(592px + 20px * 2 + 30px);
+  margin: 0 auto;
+  padding: 96px 20px;
+  text-align: center;
+}
+
+.info-hotel-title {
+  margin: 0;
+}
+
+.info-hotel-lead {
+  margin: 20px 0 54px;
+}
+
+.info-hotel .button {
+  padding: 8px 50px;
+}

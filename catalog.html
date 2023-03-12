@@ -61,9 +61,6 @@
           </li>
         </ol>
         <form class="catalog-filter" action="https://echo.htmlacademy.ru" method="get">
-          <h2 class="visually-hidden">Фильтры</h2>
-          <section class="catalog-filter">
-            <div class="catalog-filter-container">
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Инфраструктура</legend>
               <ul class="catalog-filter-list">
@@ -133,8 +130,7 @@
                   aria-label="Максимальная цена">
               </p>
             </fieldset>
-          </div>
-          </section>
+
             <menu>
               <li>
                 <button class="button" type="submit">Применить</button>
@@ -145,7 +141,6 @@
       </section>
 
         <section class="search">
-          <div class="catalog-right-column">
           <h2 class="search">Найдено гостиниц:
             <output class="search-result">38</output>
           </h2>
@@ -240,13 +235,13 @@
               <a class="pagination-link" href="#">10</a>
             </li>
           </ol>
-        </div>
         </section>
         <section class="appointment">
-          <p class="appointment-intro info-description">
-            <strong class="sub-heading">Подпишитесь на рассылку</strong>
-            Только полезная информация и никакого спама, честное бойскаутское!</p>
-          <form class="appointment-form" action="index.html" method="post">
+          <h2 class="appointment-title sub-heading">Подпишитесь на рассылку</h2>
+          <p class="appointment-description">Только полезная информация и никакого спама, <br> честное бойскаутское!</p>
+             <form class="appointment-form" method="post" action="https://echo.htmlacademy.ru">
+            <input type="email" name="email" id="appointment-email" required placeholder="Ваш e-mail"
+              aria-label="Ваш e-mail">
             <button class="button" type="submit">Подписаться</button>
           </form>
         </section>
@@ -257,25 +252,25 @@
       <h2 class="visually-hidden">Давайте дружить</h2>
       <ul class="footer-social-list">
         <li class="footer-social-item">
-          <a class="button social-button" href="https://vk.com/htmlacademy">
-            <span class="social">Вконтакте</span>
+          <a class="social-button" href="https://vk.com/htmlacademy">
+            <span class="visually-hidden">Вконтакте</span>
           </a>
         </li>
         <li class="footer-social-item">
-          <a class="button social-button" href="https://t.me/htmlacademy">
-            <span class="social">Telegram</span>
+          <a class="social-button" href="https://t.me/htmlacademy">
+            <span class="visually-hidden">Telegram</span>
           </a>
         </li>
         <li class="footer-social-item">
-          <a class="button social-button" href="https://www.youtube.com/user/htmlacademyru">
-            <span class="social">Youtube</span>
+          <a class="social-button" href="https://www.youtube.com/user/htmlacademyru">
+            <span class="visually-hidden">Youtube</span>
           </a>
         </li>
       </ul>
       <address>
-        <a class="contacts-phone" href="tel:+78128121212">+7&nbsp;(812)&nbsp;812&#8209;12&#8209;12</a>
-        <span class="social">Звоните нам на</span>
-      </address>
+          <a class="contacts-phone" href="tel:+78128121212">+7&nbsp;(812)&nbsp;812&#8209;12&#8209;12</a>
+          <span class="visually-hidden">Звоните нам на</span>
+        </address>
 
       <small>
         <a class="logo" href="https://htmlacademy.ru/">
