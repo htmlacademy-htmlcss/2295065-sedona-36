@@ -1,0 +1,9 @@
+.hero {
+  color: #ffffff;
+  background-color: #000000;
+  background-image: url("../images/sedona-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding: 51px 20px 82px;
+}

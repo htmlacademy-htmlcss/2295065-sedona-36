@@ -3,25 +3,9 @@
 @import "includes/button.css";
 @import "includes/texts.css";
 @import "includes/page-header.css";
+@import "includes/hero.css";
 @import "includes/advantages.css";
 @import "includes/appointment.css";
 @import "includes/info-hotel.css";
 @import "includes/footer.css";
 @import "includes/catalog.css";
-
-.main-container {
-  flex-grow: 1;
-  padding-top: 51px;
-
-}
-
-.hero {
-  color: #ffffff;
-  background-color: #000000;
-  background-image: url("../images/sedona-background.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  text-align: center;
-  padding: 51px 20px 82px;
-
-}

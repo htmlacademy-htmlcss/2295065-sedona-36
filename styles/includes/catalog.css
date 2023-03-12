@@ -44,7 +44,8 @@
 .catalog-filter {
 display: flex;
 flex-wrap: wrap;
-gap: 70px;
+gap: 30px 70px;
+margin-top: 40px;
 }
 
 .catalog-filter-group {
@@ -100,4 +101,21 @@ margin-left: auto;
   line-height: 36px;
   color: #ffffff;
   background-color: #82b3d3;
+
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(3, 340px);
+  list-style-type: none;
+  margin: 0;
+  padding: 0 70px;
+  gap: 20px;
+  margin-bottom: 80px;
+}
+
+.product-card-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
 }
