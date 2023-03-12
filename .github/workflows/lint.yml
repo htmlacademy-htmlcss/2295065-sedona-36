@@ -1,0 +1,28 @@
+on:
+  pull_request:
+    branches: '*'
+
+name: Project check
+jobs:
+  set-up:
+    name: Set Up
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout 🛎️
+      uses: actions/checkout@v3
+
+    - name: Package manager
+      uses: pnpm/action-setup@v2
+      with:
+        version: 7
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        cache: 'pnpm'
+
+    - name: Install dependencies 📦
+      run: pnpm i --frozen-lockfile
+
+    - name: Linting 🧹
+      run:  pnpm lint
