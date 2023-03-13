@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
   <head>
     <meta charset="utf-8">
@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles/styles.min.css">
   </head>
 
-  <body>
+  <body class="page__body">
     <header class="header">
       <a class="header__logo" href="index.html" tabindex="-1">
         <img src="images/logo-sedona.svg" width="140" height="70" alt="Герб Седоны.">
@@ -237,15 +237,16 @@
             </li>
           </ol>
         </section>
-        <section class="appointment">
-          <h2 class="appointment-title sub-heading">Подпишитесь на рассылку</h2>
-          <p class="appointment-description">Только полезная информация и никакого спама, <br> честное бойскаутское!</p>
-             <form class="appointment-form" method="post" action="https://echo.htmlacademy.ru">
-            <input type="email" name="email" id="appointment-email" required placeholder="Ваш e-mail"
-              aria-label="Ваш e-mail">
-            <button class="button" type="submit">Подписаться</button>
+        <form class="appointment" method="post" action="https://echo.htmlacademy.ru">
+          <h2 class="appointment__title page__subheading">
+            <label for="appointment-email">
+              Подпишитесь на рассылку
+            </label>
+          </h2>
+          <p class="appointment__description">Только полезная информация и никакого спама, <br> честное бойскаутское!</p>
+            <input class="input appointment__input" type="email" name="email" id="appointment-email" required placeholder="Ваш e-mail">
+            <button class="button appointment__submit" type="submit">Подписаться</button>
           </form>
-        </section>
     </main>
 
     <footer class="page-footer">

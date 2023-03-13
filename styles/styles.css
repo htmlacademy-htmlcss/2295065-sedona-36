@@ -1,13 +1,16 @@
 
 @import "includes/global.css";
+@import "includes/page.css";
 @import "includes/button.css";
 @import "includes/link.css";
-@import "includes/texts.css";
+@import "includes/input.css";
 @import "includes/header.css";
 @import "includes/navigation.css";
 @import "includes/favorite.css";
 @import "includes/hero.css";
 @import "includes/advantages.css";
+@import "includes/panorama.css";
+@import "includes/advantage.css";
 @import "includes/appointment.css";
 @import "includes/info-hotel.css";
 @import "includes/footer.css";

@@ -5,9 +5,12 @@
   text-align: center;
   color: #000000;
   padding: 96px 20px 104px;
+  display: grid;
+  grid-template-columns: 452px 232px;
+  justify-content: center;
 }
 
-.appointment-background {
+.appointment--background {
   color: #ffffff;
   background-color: #000000;
   background-image: url("../images/subscribe.jpg");
@@ -15,31 +18,21 @@
   background-repeat: no-repeat;
 }
 
-/* .appointment .appointment-background {
-max-width: 662px;
-margin: 0 auto;
-padding: 96px 20px
-} */
-
-.appointment-title {
+.appointment__title {
   margin: 0 auto 20px;
   max-width: 40ch;
+  grid-column: 1 / -1;
 }
 
-.appointment-form {
-  font-family: inherit;
-  font-size: 18px;
-  line-height: 24px;
-  color: #000000;
+.appointment__description {
+  margin: 0 auto 54px;
+  grid-column: 1 / -1;
 }
 
-.appointment-intro {
-    padding: 96px 20px 54px 104px;
-    text-align: center;
-    margin: 0 auto;
-  }
+.appointment__input {
+  border-radius: 4px 0 0 4px;
+}
 
-.appointment-intro .sub-heading{
-    display: block;
-    max-width: 720px;
-  }
+.appointment__submit {
+  border-radius: 0 4px 4px 0;
+}
