@@ -50,7 +50,7 @@
       </menu>
     </header>
 
-    <main class="main-container main-inner">
+    <main>
       <section class="filters">
         <h1 class="filters__title page__title">Гостиницы Седона</h1>
         <ol class="breadcrumbs filters__breadcrumbs">
@@ -65,82 +65,77 @@
             <a class="breadcrumbs__link">Гостиницы</a>
           </li>
         </ol>
-        <form class="catalog-filter" action="https://echo.htmlacademy.ru" method="get">
-            <fieldset class="catalog-filter-group">
-              <legend class="catalog-filter-title">Инфраструктура</legend>
-              <ul class="catalog-filter-list">
-                <li class="catalog-filter-item">
-                  <label class="control">
-                    <input class="control-input" type="checkbox" name="Бассейн">
-
-                    Бассейн
+        <form class="filters__form" action="https://echo.htmlacademy.ru" method="get">
+            <fieldset class="filters__set">
+              <legend class="page__label">Инфраструктура</legend>
+              <ul class="filters__checks">
+                <li>
+                  <label class="check">
+                    <input class="check__native page__hidden" type="checkbox" name="Бассейн">
+                    <span class="check__custom check__custom--check">Бассейн</span>
                   </label>
                 </li>
-                <li class="catalog-filter-item">
-                  <label class="control">
-                    <input class="control-input" type="checkbox" name="Парковка" checked>
-
-                    Парковка
+                <li>
+                  <label class="check">
+                    <input class="check__native page__hidden" type="checkbox" name="Парковка" checked>
+                    <span class="check__custom check__custom--check">Парковка</span>
                   </label>
                 </li>
-                <li class="catalog-filter-item">
-                  <label class="control">
-                    <input class="control-input" type="checkbox" name="Wi-fi" checked>
-
-                    Wi-fi
+                <li>
+                  <label class="check">
+                    <input class="check__native page__hidden" type="checkbox" name="Wi-fi" checked>
+                    <span class="check__custom check__custom--check">Wi-fi</span>
                   </label>
                 </li>
               </ul>
             </fieldset>
 
-            <fieldset class="catalog-filter-group">
-              <legend class="catalog-filter-title">Тип жилья</legend>
-              <ul class="catalog-filter-list">
-                <li class="catalog-filter-item">
-                  <label class="control">
-                    <input class="control-input" type="radio" name="Тип жилья" value="Гостиница" checked>
-
-                    Гостиница
-                  </label>
-                </li>
-                <li class="catalog-filter-item">
-                  <label class="control">
-                    <input class="control-input" type="radio" name="Тип жилья" value="Мотель">
-
-                    Мотель
-                  </label>
-                </li>
-                <li class="catalog-filter-item">
-                  <label class="control">
-                    <input class="control-input" type="radio" name="Тип жилья" value="Апартаменты">
-                    Апартаменты
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
-            <fieldset class="catalog-filter-group">
-              <legend class="catalog-filter-title">Стоимость,₽</legend>
-              <p class="double-number label filters_cost">
-                <label class="double-number label">от
-                  <input class="double-number_input" type="number" value="0" min="0" max="11000">
+            <fieldset class="filters__set">
+              <legend class="page__label">Тип жилья</legend>
+              <ul class="filters__checks">
+                <li>
+                  <label class="check">
+                    <input class="check__native page__hidden" type="radio" name="Тип жилья" value="Гостиница" checked>
+                    <span class="check__custom check__custom--radio">Гостиница</span>
                 </label>
-                <label class="double-number label">до
-                  <input class="double-number_input" type="number" value="0" min="0" max="11000">
+                </li>
+                <li>
+                  <label class="check">
+                    <input class="check__native page__hidden" type="radio" name="Тип жилья" value="Мотель">
+                    <span class="check__custom check__custom--radio">Мотель</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="check">
+                    <input class="check__native page__hidden" type="radio" name="Тип жилья" value="Апартаменты">
+                    <span class="check__custom check__custom--radio">Апартаменты</span>
+                    </label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="filters__set">
+              <legend class="page__label">Стоимость,₽</legend>
+              <p class="double-number">
+                <label class="double-number__label">
+                  <input class="double-number__input" type="number" value="0" min="0" max="12000">от
+                </label>
+                <label class="double-number__label">
+                  <input class="double-number__input" type="number" value="9000" min="0" max="12000">до
                 </label>
               </p>
-              <p class="range-slider">
-                <input class="range-slider_input" type="range" min="0" max="11000" value="0" step="100"
+              <p class="range-slider" style="--first-val: 0%; --second-val: 75%;">
+                <input class="range-slider__input" type="range" min="0" max="11000" value="0" step="100"
                   aria-label="Минимальная цена">
-                <input class="range-slider_input" type="range" min="0" max="11000" value="9000" step="100"
+                <input class="range-slider__input" type="range" min="0" max="11000" value="9000" step="100"
                   aria-label="Максимальная цена">
               </p>
             </fieldset>
 
-            <menu>
+            <menu class="filters__actions">
               <li>
                 <button class="button" type="submit">Применить</button>
               </li>
-              <li><button class="button" type="reset">Сбросить</button></li>
+              <li><button class="button button--transparent" type="reset">Сбросить</button></li>
             </menu>
         </form>
       </section>
@@ -256,7 +251,7 @@
     <footer class="footer">
       <ul class="footer__socials">
         <li>
-          <a class="footer__socials" href="https://vk.com/htmlacademy">
+          <a class="footer__social" href="https://vk.com/htmlacademy">
             <svg role="img" aria-labelledby="vk-title" width="25" height="14" fill="currentColor">
               <title id="vk-title">Вконтакте</title>
               <use href="images/stack.svg#vk"/>
@@ -264,7 +259,7 @@
           </a>
         </li>
         <li>
-          <a class="footer__socials" href="https://t.me/htmlacademy">
+          <a class="footer__social" href="https://t.me/htmlacademy">
             <svg role="img" aria-labelledby="tg-title" width="25" height="14" fill="currentColor">
               <title id="tg-title">Наш Телеграм</title>
               <use href="images/stack.svg#telegram"/>
@@ -272,7 +267,7 @@
           </a>
         </li>
         <li>
-          <a class="footer__socials" href="https://www.youtube.com/user/htmlacademyru">
+          <a class="footer__social" href="https://www.youtube.com/user/htmlacademyru">
             <svg role="img" aria-labelledby="yt-title" width="25" height="14" fill="currentColor">
               <title id="yt-title">Наш Ютуб</title>
               <use href="images/stack.svg#youtube"/>

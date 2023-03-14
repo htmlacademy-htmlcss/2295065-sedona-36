@@ -15,4 +15,7 @@
 @import "includes/info-hotel.css";
 @import "includes/footer.css";
 @import "includes/breadcrumbs.css";
+@import "includes/check.css";
 @import "includes/filters.css";
+@import "includes/double-number.css";
+@import "includes/range-slider.css";
