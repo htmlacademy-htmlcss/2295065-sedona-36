@@ -16,10 +16,16 @@
   font-display: swap;
 }
 
-*,
+
 *::before,
 *::after {
   box-sizing: border-box;
+}
+
+:root {
+  --accent: hsl(204deg 48% 67%);
+  --accent-hover: hsl(204 48% 60%);
+  --accent-active: hsl(204deg 48% 60% / 30%);
 }
 
 img {

@@ -5,7 +5,7 @@
   font-weight: 700;
   text-align: center;
   color: #ffffff;
-  --bg: hsl(204, 48%, 67%);
+  --bg: var(--accent);
   background-color: var(--bg);
   text-decoration: none;
   text-transform: uppercase;
@@ -18,20 +18,20 @@
   outline-color: var(--bg);
   outline-offset: 0.2em;
   cursor: pointer;
+  margin: 0;
 
 }
 
 .button:is(:hover, :focus-visible) {
-  --bg: hsl(204, 48%, 60%);
+  --bg: var(--accent-hover);
 }
 
 .button:active {
-  color: hsl(0deg 0%, 100% / 30%);
+  color: var(--accent-active);
 }
 
 .button--secondary {
   --bg: hsl(20, 15%, 40%);
-
 }
 
 .button--secondary:is(:hover, :focus-visible) {

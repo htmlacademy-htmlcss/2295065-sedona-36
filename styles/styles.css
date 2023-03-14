@@ -14,4 +14,5 @@
 @import "includes/appointment.css";
 @import "includes/info-hotel.css";
 @import "includes/footer.css";
-@import "includes/catalog.css";
+@import "includes/breadcrumbs.css";
+@import "includes/filters.css";

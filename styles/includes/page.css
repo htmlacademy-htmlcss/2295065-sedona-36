@@ -40,3 +40,10 @@
     font-size: 20px;
     line-height: 1.2;
   }
+
+
+  .page__title {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 1.3;
+  }

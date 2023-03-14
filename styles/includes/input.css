@@ -13,6 +13,7 @@
   transition-property: background-color, border-color;
   transition-duration: 250ms;
   transition-timing-function: ease-in-out;
+  margin: 0;
   }
 
 .input::placeholder {

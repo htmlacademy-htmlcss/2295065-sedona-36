@@ -1,0 +1,15 @@
+.filters {
+  background-color: var(--accent);
+  background-image: url("../images/catalog.jpg");
+  background-size: cover;
+  color: #ffffff;
+  padding: 35px 70px 70px;
+}
+
+.filters__title {
+  margin: 0;
+}
+
+.filters__breadcrumbs {
+  margin: 8px 0 40px;
+  }
