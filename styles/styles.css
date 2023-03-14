@@ -4,6 +4,9 @@
 @import "includes/button.css";
 @import "includes/link.css";
 @import "includes/input.css";
+@import "includes/double-number.css";
+@import "includes/range-slider.css";
+@import "includes/select.css";
 @import "includes/header.css";
 @import "includes/navigation.css";
 @import "includes/favorite.css";
@@ -17,5 +20,5 @@
 @import "includes/breadcrumbs.css";
 @import "includes/check.css";
 @import "includes/filters.css";
-@import "includes/double-number.css";
-@import "includes/range-slider.css";
+@import "includes/catalog.css";
+@import "includes/radio-icon.css";

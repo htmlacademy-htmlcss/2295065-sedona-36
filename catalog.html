@@ -65,7 +65,7 @@
             <a class="breadcrumbs__link">Гостиницы</a>
           </li>
         </ol>
-        <form class="filters__form" action="https://echo.htmlacademy.ru" method="get">
+        <form class="filters__form" id="filters" action="https://echo.htmlacademy.ru" method="get">
             <fieldset class="filters__set">
               <legend class="page__label">Инфраструктура</legend>
               <ul class="filters__checks">
@@ -140,25 +140,57 @@
         </form>
       </section>
 
-        <section class="search">
-          <h2 class="search">Найдено гостиниц:
-            <output class="search-result">38</output>
+        <section class="catalog">
+          <h2 class="catalog__title page__subheading">Найдено гостиниц:
+            <output class="search-result" for="filters">38</output>
           </h2>
-          <select class="select-control" aria-label="Сортировка">
+          <form class="catalog__form" action="https://echo.htmlacademy.ru" method="get">
+          <select class="select" aria-label="Сортировка">
             <option value="popular">Сначала популярное</option>
             <option value="cheap">Сначала дешевое</option>
             <option value="expensive">Сначала дорогое</option>
           </select>
-          <a href="#" class="view">
-            <span class="page__hidden">Показать карточки</span>
-          </a>
-          <a href="#" class="view">
-            <span class="page__hidden">Большие карточки</span>
-          </a>
-          <a href="#" class="view">
-            <span class="page__hidden">Показать список</span>
-          </a>
-          <ul class="product-list">
+
+          <fieldset class="catalog__views">
+            <legend class="page__hidden">Вид</legend>
+            <label class="radio-icon">
+              <input class="radio-icon__native page__hidden" type="radio"
+              name="view" value="карточки" checked>
+              <span class="radio-icon__custom">
+                <svg role="img" aria-labelledby="titles-title" width="16" height="14" fill="currentColor">
+                  <title class="titles-title">Показать карточки</title>
+                  <use href="images/stack.svg#tile"/>
+                </svg>
+              </span>
+            </label>
+
+            <label class="radio-icon">
+              <input class="radio-icon__native page__hidden" type="radio"
+              name="view" value="слайдами">
+              <span class="radio-icon__custom">
+                <svg role="img" aria-labelledby="slides-title" width="16" height="14" fill="currentColor">
+                  <title class="slides-title">Показать слайдами</title>
+                  <use href="images/stack.svg#slide"/>
+                </svg>
+              </span>
+            </label>
+
+            <label class="radio-icon">
+              <input class="radio-icon__native page__hidden" type="radio"
+              name="view" value="список">
+              <span class="radio-icon__custom">
+                <svg role="img" aria-labelledby="list-title" width="16" height="14" fill="currentColor">
+                  <title class="list-title">Показать список</title>
+                  <use href="images/stack.svg#list"/>
+                </svg>
+              </span>
+            </label>
+          </fieldset>
+
+          <button type="submit" class="page__hidden">Обновить</button>
+          </form>
+
+          <ul class="catalog__list">
             <li class="product-card">
               <a class="product-card-link" href="product/html">
                 <img class="product-card-image" src="images/hotel/hotel-1.jpg" width="300" height="212" alt="Amara Resort & Spa">
@@ -217,7 +249,7 @@
             </li>
           </ul>
 
-          <ol class="pagination">
+          <ol class="pagination catalog__pagination">
             <li class="pagination-item">
               <a class="pagination-link-current">1</a>
             </li>

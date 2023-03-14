@@ -1,0 +1,31 @@
+.radio-icon {
+  width: 100%;
+  height: 100%;
+  display: block;
+
+}
+
+.radio-icon__custom {
+  border: 2px solid hsl(0, 0%, 90%);
+  border-radius: 4px;
+  background-color: #ffffff;
+  color: #000000;
+  display: grid;
+  width: 100%;
+  height: 100%;
+  place-content: center;
+  cursor: pointer;
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: ease-in-out;
+}
+
+.radio-icon__native:checked + .radio-icon__custom,
+.radio-icon__custom:is(:hover, :active) {
+  border-color: hsl(0, 0%, 0%);
+
+}
+
+.radio-icon__native:focus + .radio-icon__custom {
+  border-color: var(--accent);
+  }
