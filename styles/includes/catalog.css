@@ -41,5 +41,10 @@ align-items: center;
 .catalog__list {
   grid-column: 1 / -1;
   display: grid;
-
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  list-style: none;
+  gap: 20px;
+  padding: 0 0 40px;
+  margin: 0;
+  border-bottom: 1px solid hsl(0, 0%, 90%);
 }

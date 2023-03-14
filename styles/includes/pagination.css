@@ -1,0 +1,24 @@
+.pagination {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-rows: 60px;
+  grid-auto-columns: 60px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 8px;
+}
+
+.pagination__empty, .pagination__link {
+  display: grid;
+  height: 100%;
+  place-items: center;
+  width: 100%;
+}
+
+.pagination__link:not([href]) {
+  cursor: default;
+  --bg: hsl(0, 0%, 95%);
+  color: #000000;
+  pointer-events: none;
+}
