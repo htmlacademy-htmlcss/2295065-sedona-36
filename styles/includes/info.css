@@ -1,0 +1,64 @@
+.info {
+  width: 26px;
+  height: 26px;
+  background: var(--accent);
+  border: none;
+  border-radius: 50%;
+  display: grid-inline;
+  place-items: center;
+  margin: 0;
+  margin-left: 10px;
+  color: hsl(0, 0%, 100%);
+  padding: 0;
+  position: relative;
+}
+
+.info__bubble {
+  position: absolute;
+  background: #333333;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  width: 270px;
+  padding: 15px 16px 16px 22px;
+  top: calc(100% + 16px);
+  left: 50%;
+  transform: translateX(-50%);
+
+  font-weight: 400;
+  font-size: 16px;
+  text-align: left;
+  color: #ffffff;
+  opacity: 0;
+  pointer-events: none;
+  translate: opacity 1s ease;
+
+  transition-property: opacity;
+  transition-duration: 250ms;
+  transition-timing-function: ease-in-out;
+}
+
+.info:is(:hover, :focus-visible) .info__bubble {
+  opacity: 1;
+}
+
+.info:focus-visible .info__bubble {
+  opacity: 1;
+}
+
+.info__bubble::before {
+  content: "";
+  background: #333333;
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 19px;
+  height: 10px;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+
+.amount-input__label {
+  display: flex;
+  align-content: center;
+}

@@ -1,0 +1,58 @@
+.amount-input {
+  display: flex;
+  gap: 46px;
+  margin: 0;
+  align-content: center;
+  align-items: center;
+}
+
+.amount-input__wrapper {
+  display: grid;
+  grid-template-columns: 40px 31px 40px;
+  background: hsl(0, 0%, 95%);
+  border-radius: 4px;
+  height: 48px;
+  font-size: 18px;
+  line-height: calc(20 / 18);
+  font-weight: 700;
+}
+
+.amount-input__button {
+  background-color: transparent;
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  color: hsl(20 15% 40% / 30%);
+  outline-color: var(--accent);
+  display: grid;
+  place-items: center;
+}
+
+.amount-input__button:is(:hover, :focus-visible) {
+  color: hsl(0 0% 0%);
+}
+
+.amount-input__button:active {
+  color: hsl(0 0% 0% / 10%);
+}
+
+.amount-input__input {
+  background-color: transparent;
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  appearance: textfield;
+  text-align: center;
+  font: inherit;
+  outline-color: var(--accent);
+}
+
+.amount-input__input::-webkit-outer-spin-button
+.amount-input__input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
