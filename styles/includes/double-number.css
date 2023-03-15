@@ -18,6 +18,7 @@
   font-weight: 400;
   border: 2px solid transparent;
   outline: none;
+  align-items: center;
   transition-property: outline, border-color, background-color;
   transition-duration: 250ms;
   transition-timing-function: ease-in-out;

@@ -12,6 +12,11 @@
   padding: 8px;
   border-radius: 4px;
   border: none;
+
+  display: inline-grid;
+  place-content: center;
+
+
   transition-property: background-color, color;
   transition-duration: 250ms;
   transition-timing-function: ease-in-out;
