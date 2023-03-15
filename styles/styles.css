@@ -314,10 +314,10 @@ img {
   width: 100%;
   background-image: linear-gradient(
     to right,
-    rgba(#ffffff, 0.3) var(--first-val),
+    hsl(0 0% 100% / 30%) var(--first-val),
     #ffffff var(--first-val),
     #ffffff var(--second-val),
-    rgba(#ffffff, 0.3) var(--second-val)
+    hsl(0 0% 100% / 30%) var(--second-val)
   );
   background-size: 100% 4px;
   background-repeat: no-repeat;
@@ -332,9 +332,9 @@ img {
   cursor: grab;
   width: 100%;
   height: 100%;
-  -webkit-appearance: none;
   appearance: none;
   background-color: transparent;
+  margin: 0;
 }
 
 .range-slider__input::-webkit-slider-runnable-track {
@@ -845,7 +845,7 @@ img {
   font-size: 1.111em;
   width: 1em;
   height: 1em;
-  border: #ffffff;
+  background-color: #ffffff;
   border-radius: 4px;
 }
 
@@ -1280,8 +1280,8 @@ img {
   outline-color: var(--accent);
 }
 
-.amount-input__input::-webkit-outer-spin-button
-  .amount-input__input::-webkit-inner-spin-button {
+.amount-input__input::-webkit-outer-spin-button,
+.amount-input__input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   appearance: none;
   margin: 0;
