@@ -124,9 +124,9 @@
                 </label>
               </p>
               <p class="range-slider" style="--first-val: 0%; --second-val: 75%;">
-                <input class="range-slider__input" type="range" min="0" max="11000" value="0" step="100"
+                <input class="range-slider__input" type="range" min="0" max="12000" value="0" step="100"
                   aria-label="Минимальная цена">
-                <input class="range-slider__input" type="range" min="0" max="11000" value="9000" step="100"
+                <input class="range-slider__input" type="range" min="0" max="12000" value="9000" step="100"
                   aria-label="Максимальная цена">
               </p>
             </fieldset>
@@ -158,7 +158,7 @@
               name="view" value="карточки" checked>
               <span class="radio-icon__custom">
                 <svg role="img" aria-labelledby="titles-title" width="16" height="14" fill="currentColor">
-                  <title class="titles-title">Показать карточки</title>
+                  <title id="titles-title">Показать карточки</title>
                   <use href="images/stack.svg#tile"/>
                 </svg>
               </span>
@@ -169,7 +169,7 @@
               name="view" value="слайдами">
               <span class="radio-icon__custom">
                 <svg role="img" aria-labelledby="slides-title" width="16" height="14" fill="currentColor">
-                  <title class="slides-title">Показать слайдами</title>
+                  <title id="slides-title">Показать слайдами</title>
                   <use href="images/stack.svg#slide"/>
                 </svg>
               </span>
@@ -180,7 +180,7 @@
               name="view" value="список">
               <span class="radio-icon__custom">
                 <svg role="img" aria-labelledby="list-title" width="16" height="14" fill="currentColor">
-                  <title class="list-title">Показать список</title>
+                  <title id="list-title">Показать список</title>
                   <use href="images/stack.svg#list"/>
                 </svg>
               </span>
@@ -215,7 +215,7 @@
               <p class="product-card__type">Гостиница</p>
               <p class="product-card__price">От 5000 ₽</p>
               <a class="product-card__button button button--secondary" href="#">Подробнее</a>
-              <button type="button" class="product-card__button button" button--seccess>в избранном</button>
+              <button type="button" class="product-card__button button button--seccess">в избранном</button>
               <svg width="90" height="18" fill="#83B3D3" role="img" aria-label="Четырехзвездночный">
                 <title>Четырехзвездночный</title>
                 <use href="images/stack.svg#star" width="18" height="18" x="0"></use>
@@ -331,6 +331,85 @@
           </a>
       </small>
     </footer>
+
+    <dialog id="modal" class="modal">
+      <form class="modal__wrapper" method="dialog" action="https://echo.htmlacademy.ru">
+        <h2 class="modal__title page__subheading">Поиск гостиницы в Седоне</h2>
+        <button class="modal__close" type="submit" value="close" title="Закрыть" aria-label="Закрыть">
+          <svg aria-hidden="true" width="15" height="15" fill="currentColor">
+            <use href="images/stack.svg#cross"/>
+           </svg>
+         </button>
+
+         <p class="date-input">
+          <label class="page__label" for="enter-date">Дата заезда:</label>
+          <input class="input date-input__input" id="enter-date" type="text" value="27 апреля 2020" required>
+          <span class="date-input__hint date-input__hint--error">Мы не можем отправить вас в прошлое.</span>
+         </p>
+
+         <p class="date-input">
+          <label class="page__label" for="finish-date">Дата выезда:</label>
+          <input class="input date-input__input" id="finish-date" type="text" value="27 апреля 2020" required>
+          <span class="date-input__hint">На эти даты есть свободные номера. Пока есть.</span>
+         </p>
+
+         <div class="modal__numbers">
+          <p class="amount-input">
+          <label class="page__label" for="adults">Взрослые:</label>
+
+          <span class="amount-input__wrapper">
+          <button class="amount-input__button" type="button" title="Уменьшить" aria-label="Уменьшить">
+            <svg aria-hidden="true" width="20" height="20" fill="currentColor">
+              <use href="images/stack.svg#minus"/>
+             </svg>
+             </button>
+             <input class="amount-input__input" id="adults" type="number" value="2" min="1" max="30" required>
+             <button class="amount-input__button" type="button" title="Увеличить" aria-label="Увеличить">
+              <svg aria-hidden="true" width="20" height="20" fill="currentColor">
+                <use href="images/stack.svg#plus"/>
+               </svg>
+             </button>
+            </span>
+          </p>
+
+
+            <p class="amount-input">
+              <span class="amount-input__label">
+              <label class="page__label" for="children">Дети:</label>
+                <button class="info" type="button" aria-label="Подробнее">
+                  <svg aria-hidden="true" width="20" height="20" fill="currentColor">
+                    <use href="images/stack.svg#info"/>
+                   </svg>
+
+                <span class="info__bubble" id="more-info">
+                  Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
+                </span>
+                </button>
+
+               </span>
+
+            <span class="amount-input__wrapper">
+              <button class="amount-input__button" type="button" title="Уменьшить" aria-label="Уменьшить">
+                <svg aria-hidden="true" width="20" height="20" fill="currentColor">
+                  <use href="images/stack.svg#minus"/>
+                 </svg>
+                 </button>
+                 <input class="amount-input__input" id="children" type="number" value="2" min="0" max="30" required>
+                 <button class="amount-input__button" type="button" title="Увеличить" aria-label="Увеличить" aria-describedby="more-info">
+                  <svg aria-hidden="true" width="20" height="20" fill="currentColor">
+                    <use href="images/stack.svg#plus"/>
+                   </svg>
+                 </button>
+                </span>
+            </p>
+            </div>
+
+       <button class="modal__submit button" type="submit" value="find">
+        Найти
+       </button>
+
+      </form>
+    </dialog>
 
   </body>
 </html>
