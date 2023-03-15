@@ -89,7 +89,11 @@ function watchFiles() {
   watch("./**/*.{html,js,jpg,png,svg,ico,webmanifest}", reloadServer);
 }
 
+const copyStyles = () => src("styles/styles.min.css").pipe(rename("styles.css")).pipe(dest("build/styles/"));
+
 function copyProject() {
+  copyStyles();
+
   return src([
     "*.{html,md,ico,svg,stylelintrc,editorconfig}",
     "styles/styles.css",
